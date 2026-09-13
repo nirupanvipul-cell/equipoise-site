@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Equipoise — Ventilation in the operating room</title>
+<style>
+:root { --ink:#1a1a1a; --paper:#fdfdfb; --rule:#d8d5cc; --dim:#6b675f;
+        --accent:#7a2e2e; }
+@media (prefers-color-scheme: dark) {
+  :root { --ink:#e8e6e1; --paper:#191917; --rule:#3a3833; --dim:#a09a8e;
+          --accent:#d08770; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--paper); color:var(--ink);
+  font:17px/1.65 Charter, Georgia, "Times New Roman", serif; }
+main { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem; }
+header.site { border-bottom:1px solid var(--rule); padding:1rem 1.25rem;
+  font-family:-apple-system, "Helvetica Neue", Arial, sans-serif; }
+header.site .brand { font-weight:700; letter-spacing:.06em; font-size:.95rem;
+  text-transform:uppercase; }
+header.site .prov { color:var(--dim); font-size:.8rem; margin-top:.15rem; }
+h1 { font-size:1.65rem; line-height:1.25; margin:2.2rem 0 .8rem; }
+h2 { font-size:1.25rem; margin:2.4rem 0 .6rem; border-bottom:1px solid var(--rule);
+  padding-bottom:.3rem; }
+h3 { font-size:1.05rem; margin:1.8rem 0 .5rem; }
+h1,h2,h3 { font-family:-apple-system, "Helvetica Neue", Arial, sans-serif; }
+p { margin:.75rem 0; }
+table { border-collapse:collapse; margin:1.2rem 0; font-size:.85rem; width:100%;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace; line-height:1.45; }
+.tablewrap { overflow-x:auto; }
+th,td { border:1px solid var(--rule); padding:.35rem .55rem; text-align:left;
+  vertical-align:top; }
+th { font-family:-apple-system, Arial, sans-serif; font-size:.78rem; }
+code, pre { font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size:.85em; }
+pre { overflow-x:auto; background:rgba(128,128,128,.08); padding:.8rem;
+  border:1px solid var(--rule); }
+blockquote { margin:1rem 0; padding:.2rem 1rem; border-left:3px solid var(--accent);
+  color:var(--dim); }
+hr { border:none; border-top:1px solid var(--rule); margin:2.5rem 0; }
+footer { border-top:1px solid var(--rule); margin-top:3rem; padding-top:1rem;
+  color:var(--dim); font-size:.8rem;
+  font-family:-apple-system, Arial, sans-serif; }
+a { color:var(--accent); }
+</style></head><body>
+<header class="site"><div class="brand">Equipoise</div>
+<div class="prov"><a href="index.html">← all documents</a></div>
+<div class="prov">DOC-EQ-0301-OR-r1 · emitted 2026-09-11 · every claim carries a minted
+identifier; the methods layer beneath the clinician layer is the audit trail.
+◆ marks a synthesis or judgement sentence — the document's own reading of the
+map, not a reported fact.</div></header>
+<main><h1>Ventilation strategy in the operating room — what the trials actually compared (r4)</h1>
+<p><strong>◆ marks a sentence that is this document's own synthesis from the map, or a next-study judgement — verified for consistency with the map, not for external support (SHEET-7, P-83). Everything unmarked is fact and is verified strictly.</strong></p>
+<p><strong>The question as usually asked:</strong> what ventilator settings for surgery? This document splits the question by what was actually compared, in fourteen randomised trials in the operating room. ◆ The pattern is not one answer: protection against nothing is decisively good, adding fixed intensity to existing protection is consistently null, and individualizing the pressure side is the one live question, with its single strong positive sitting in one-lung surgery.</p>
+<h2>Where the evidence sits (not what to do)</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Lever</th>
+<th>Where the evidence sits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tidal volume</strong></td>
+<td>◆ No later trial in this map repeated IMPROVE's zero-PEEP, no-recruitment comparator; the one later comparator arm at conventional tidal volumes (Karalapillai's) sat at PEEP 5 in both arms. Low tidal volume alone, with PEEP held equal at 5, was null in 1,206 analysed mixed major-surgery patients (Karalapillai 2020) — the map's one single-component tidal-volume contrast.</td>
+</tr>
+<tr>
+<td><strong>Driving pressure</strong></td>
+<td>◆ As a TITRATION TARGET it has one positive trial (thoracic 2019, n=292), one large null (thoracic multicentre 2023, n=1,170), and nulls in cardiac, laparoscopic, elective-abdominal and emergency-abdominal surgery — the emergency trial trending the wrong way (IMPROVE-2, RR 1.27, CI 0.96–1.68). No trial has tested driving pressure as a LIMIT rather than a titration target in the OR.</td>
+</tr>
+<tr>
+<td><strong>PEEP</strong></td>
+<td>◆ Fixed higher PEEP with routine recruitment, added to a protective base, is null in every population tried — open abdomen (PROVHILO), obesity (PROBESE), one-lung (PROTHOR) — at a haemodynamic price where measured. Individualized PEEP is the live question: one strongly positive one-lung trial (iPROVE-OLV 2024), nulls elsewhere.</td>
+</tr>
+<tr>
+<td><strong>Recruitment manoeuvres</strong></td>
+<td>◆ Never tested alone in this map: in every trial that added fixed higher PEEP (PROVHILO, PROBESE, PROTHOR) recruitment manoeuvres came packaged with it, so those trials cannot separate the two. The one trial with no recruitment in either arm (Karalapillai 2020) was a tidal-volume contrast.</td>
+</tr>
+</tbody>
+</table></div>
+<p>◆ <strong>Setting is the first split, before any component.</strong> These are paralysed, supine or positioned lungs, ventilated for hours not days, with atelectasis rather than inflammation as the dominant mechanism — and the primary outcomes in this map are postoperative complication measures — IMPROVE-2 folds death into its composite, none is standalone mortality — which is why this document is separate from the ICU-ARDS one and their answers must not be transplanted.</p>
+<h2>The bundle map — every trial, what each arm actually got</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Trial</th>
+<th>Setting</th>
+<th>Randomised</th>
+<th>Low TV</th>
+<th>PEEP</th>
+<th>Recruitment</th>
+<th>Comparator (TV/PEEP/RM)</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IMPROVE 2013</td>
+<td>or-abdominal-highrisk</td>
+<td>400</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no/no/no</td>
+<td>benefit</td>
+</tr>
+<tr>
+<td>PROVHILO 2014</td>
+<td>or-abdominal-highrisk</td>
+<td>900 (894 analysed)</td>
+<td>TV8</td>
+<td>12</td>
+<td>yes</td>
+<td>TV8/&lt;=2/no</td>
+<td>null</td>
+</tr>
+<tr>
+<td>iPROVE 2018</td>
+<td>or-abdominal</td>
+<td>1012 (967 analysed)</td>
+<td>yes</td>
+<td>individualized</td>
+<td>yes</td>
+<td>yes/std/no</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DP-guided thoracic 2019</td>
+<td>or-one-lung</td>
+<td>292</td>
+<td>yes</td>
+<td>DP-titrated</td>
+<td>yes</td>
+<td>yes/5/yes</td>
+<td>benefit</td>
+</tr>
+<tr>
+<td>PROBESE 2019</td>
+<td>or-obesity</td>
+<td>2013 (1976 analysed)</td>
+<td>TV7</td>
+<td>12</td>
+<td>yes</td>
+<td>TV7/4/no</td>
+<td>null</td>
+</tr>
+<tr>
+<td>Karalapillai 2020</td>
+<td>or-mixed-major</td>
+<td>1236 (1206 analysed)</td>
+<td>yes</td>
+<td>5</td>
+<td>no</td>
+<td>no/5/no</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DP-guided cardiac 2023</td>
+<td>or-cardiac</td>
+<td>694</td>
+<td>yes</td>
+<td>DP-titrated</td>
+<td>unclear</td>
+<td>yes/5/unclear</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DP-guided lap/robot 2023</td>
+<td>or-laparoscopy</td>
+<td>384</td>
+<td>yes</td>
+<td>DP-titrated (mean 13.6)</td>
+<td>routine</td>
+<td>yes/5/unclear</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DP-guided thoracic multi 2023</td>
+<td>or-one-lung</td>
+<td>1300 (1170 analysed)</td>
+<td>yes</td>
+<td>DP-titrated</td>
+<td>yes</td>
+<td>yes/5/no</td>
+<td>null</td>
+</tr>
+<tr>
+<td>iPROVE-OLV 2024</td>
+<td>or-one-lung</td>
+<td>1380 (1308 analysed)</td>
+<td>yes</td>
+<td>individualized</td>
+<td>yes</td>
+<td>yes/std/no</td>
+<td>benefit</td>
+</tr>
+<tr>
+<td>PRIME-AIR 2025</td>
+<td>or-abdominal-highrisk</td>
+<td>794 (751 analysed)</td>
+<td>yes</td>
+<td>individualized (mean 7.5)</td>
+<td>yes</td>
+<td>unclear/usual/no</td>
+<td>null</td>
+</tr>
+<tr>
+<td>IMPROVE-2 2025</td>
+<td>or-abdominal-emergency</td>
+<td>679</td>
+<td>yes</td>
+<td>highest for DP&lt;13</td>
+<td>yes</td>
+<td>yes/5/no</td>
+<td>null-trend-harm</td>
+</tr>
+<tr>
+<td>DESIGNATION 2025</td>
+<td>or-abdominal-highrisk</td>
+<td>1468 (1435 analysed)</td>
+<td>yes</td>
+<td>DP-guided high</td>
+<td>yes</td>
+<td>yes/low/no</td>
+<td>null</td>
+</tr>
+<tr>
+<td>PROTHOR 2025</td>
+<td>or-one-lung</td>
+<td>2200 (2085 analysed)</td>
+<td>yes</td>
+<td>10</td>
+<td>yes</td>
+<td>yes/5/no</td>
+<td>null</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>A cell naming a number is the setting as delivered; 'same both' means the component did not differ between arms — that trial cannot speak to it. Haemodynamic cost appears in the group tables where the stored extraction holds numbers; a row reading 'haemodynamics not in the stored record' holds no extracted numbers for these fields. Re-issue on arrival of fuller text is this corpus's recorded policy, cited in the provenance record, not a property of any trial.</em></p>
+<h2>The walkthrough — where each group of trials landed, and why</h2>
+<h3>Protective bundle against no protection at all</h3>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Trial</th>
+<th>Setting</th>
+<th>Primary outcome</th>
+<th>Result</th>
+<th>As tested · haemodynamic cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IMPROVE 2013</td>
+<td>or-abdominal-highrisk</td>
+<td>7-day pulmonary+extrapulmonary composite</td>
+<td>10.5% vs 27.5%, RR 0.40 (0.24-0.68)</td>
+<td>as tested: protective arm TV 6.4±0.8 ml/kg, PEEP 6–8 cmH₂O, median 9 recruitment manoeuvres; comparator TV 11.1±1.1 ml/kg at zero PEEP, none · haemodynamics not in the stored record</td>
+</tr>
+</tbody>
+</table></div>
+<h3>One component alone, on an otherwise identical base</h3>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Trial</th>
+<th>Setting</th>
+<th>Primary outcome</th>
+<th>Result</th>
+<th>As tested · haemodynamic cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Karalapillai 2020</td>
+<td>or-mixed-major</td>
+<td>PPC by day 7</td>
+<td>38% vs 39%, RR 0.97 (0.84-1.11)</td>
+<td>haemodynamics not in the stored record</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Fixed higher PEEP with routine recruitment, added to a protective base</h3>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Trial</th>
+<th>Setting</th>
+<th>Primary outcome</th>
+<th>Result</th>
+<th>As tested · haemodynamic cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PROVHILO 2014</td>
+<td>or-abdominal-highrisk</td>
+<td>PPC by day 5</td>
+<td>40% vs 39%, RR 1.01 (0.86-1.20)</td>
+<td>haemodynamics not in the stored record</td>
+</tr>
+<tr>
+<td>PROBESE 2019</td>
+<td>or-obesity</td>
+<td>PPC by day 5</td>
+<td>21.3% vs 23.6%, RR 0.93 (0.83-1.04)</td>
+<td>haemodynamics not in the stored record</td>
+</tr>
+<tr>
+<td>PROTHOR 2025</td>
+<td>or-one-lung</td>
+<td>PPC composite day 5</td>
+<td>53.6% vs 56.4%, ARD -2.68 (-6.36 to 1.01), p=0.155</td>
+<td>hypotension High PEEP group: 360/966; hypotension Low PEEP group: 140/978 [local extraction of the licensed text; verified against the stored record, not externally checkable]</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Individualized or driving-pressure-guided PEEP</h3>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Trial</th>
+<th>Setting</th>
+<th>Primary outcome</th>
+<th>Result</th>
+<th>As tested · haemodynamic cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>iPROVE 2018</td>
+<td>or-abdominal</td>
+<td>pulmonary+systemic complications</td>
+<td>46-48% vs 51%, all ns</td>
+<td>haemodynamics not in the stored record</td>
+</tr>
+<tr>
+<td>DP-guided thoracic 2019</td>
+<td>or-one-lung</td>
+<td>PPC (Melbourne &gt;=4) day 3</td>
+<td>5.5% vs 12.2%, OR 0.42 (0.18-0.99)</td>
+<td>as tested: both arms TV 6 ml/kg ideal body weight with routine recruitment; driving-pressure arm PEEP 3–5 cmH₂O titrated, comparator fixed 5 · haemodynamics not in the stored record</td>
+</tr>
+<tr>
+<td>DP-guided cardiac 2023</td>
+<td>or-cardiac</td>
+<td>PPC by day 7</td>
+<td>40.3% vs 40.9%, RR 0.99 (0.82-1.18)</td>
+<td>haemodynamics not in the stored record</td>
+</tr>
+<tr>
+<td>DP-guided lap/robot 2023</td>
+<td>or-laparoscopy</td>
+<td>PPC by day 7</td>
+<td>did not decrease (underpowered: low event rate)</td>
+<td>stored haemodynamic numbers are disputed by the external checker and withheld pending an owner spot-check of the licensed text</td>
+</tr>
+<tr>
+<td>DP-guided thoracic multi 2023</td>
+<td>or-one-lung</td>
+<td>PPC</td>
+<td>no reduction (n=1170)</td>
+<td>haemodynamics not in the stored record</td>
+</tr>
+<tr>
+<td>iPROVE-OLV 2024</td>
+<td>or-one-lung</td>
+<td>severe PPC day 7</td>
+<td>6% vs 15%, RR 0.39 (0.28-0.56)</td>
+<td>as tested: iOLA arm TV 5–6 mL/kg with titrated PEEP and routine recruitment; comparator TV 8 mL/kg, PEEP 4 cmH₂O, no recruitment · haemodynamics not in the stored record</td>
+</tr>
+<tr>
+<td>PRIME-AIR 2025</td>
+<td>or-abdominal-highrisk</td>
+<td>PPC severity grade day 7</td>
+<td>1.60 vs 1.53, P=0.19</td>
+<td>haemodynamics not in the stored record</td>
+</tr>
+<tr>
+<td>IMPROVE-2 2025</td>
+<td>or-abdominal-emergency</td>
+<td>respiratory failure/death day 30</td>
+<td>25.7% vs 20.2%, RR 1.27 (0.96-1.68)</td>
+<td>haemodynamics not in the stored record</td>
+</tr>
+<tr>
+<td>DESIGNATION 2025</td>
+<td>or-abdominal-highrisk</td>
+<td>PPC by day 5</td>
+<td>19.8% vs 17.4%, P=0.23</td>
+<td>hypotension Driving pressure–guided high PEEP and recruitment maneuvers: 382/718; hypotension Standard low PEEP without recruitment maneuvers: 317/717; vasopressors Driving pressure–guided high PEEP and recruitment maneuvers: 224/718; vasopressors Standard low PEEP without recruitment maneuvers: 130/717 [each number verified verbatim in the held free full text]</td>
+</tr>
+</tbody>
+</table></div>
+<p>◆ Read in the map's own order. <strong>Protection against no protection settles first</strong>: IMPROVE 2013, whose comparator arm was ventilated at 11.1±1.1 mL/kg (as extracted) with zero PEEP and no recruitment, cut its composite complication rate from 27.5% to 10.5% — and no later trial in this map repeated that comparator; the one later above-8 comparator (Karalapillai's conventional arm) kept PEEP 5 in both arms. <strong>One component alone teaches next</strong>: the map's single tidal-volume-only contrast (Karalapillai 2020) is null in 1,206 analysed. <strong>Adding fixed intensity, on this map, is a three-trial null</strong>: PROVHILO, PROBESE and PROTHOR could not make fixed higher PEEP with routine recruitment pay on top of a protective base. <strong>Individualization is where the argument now lives</strong>: five populations carry a trial and one (obesity) carries none; one strong positive (one-lung, iPROVE-OLV), one small early positive (DP-thoracic 2019), and null or worse in the rest, with the emergency abdomen's point estimate on the harm side. The one-lung PEEP cells put 'individualized' only on the positive side (iPROVE-OLV), while 'DP-titrated' sits on both — a small positive (DP-thoracic 2019) and the large null (DP-thoracic multicentre 2023) — so whether the individualized label rather than DP-titration carries the effect is the sharpest open question the map contains.</p>
+<h2>Individualized PEEP, population by population</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Population</th>
+<th>The question rated: does individualized PEEP reduce postoperative pulmonary complications here?</th>
+<th>Trial(s)</th>
+<th>Evidence class (per design)</th>
+<th>Confidence label (per this question)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>One-lung (thoracic)</td>
+<td>◆ One strong positive on severe PPC (iPROVE-OLV: 6% vs 15%, RR 0.39); the adjacent DP-titrated strategy null at scale after a small positive</td>
+<td>iPROVE-OLV 2024 (n=1,308 analysed); DP-thoracic 2019 (n=292); DP-thoracic multicentre 2023 (n=1,170)</td>
+<td>replicated contrasts, conflicting results</td>
+<td><strong>contested</strong> — the trials disagree, and their PEEP cells differ (individualized versus DP-titrated)</td>
+</tr>
+<tr>
+<td>Open abdominal, elective high-risk</td>
+<td>◆ Null in three trials</td>
+<td>DESIGNATION 2025 (n=1,435); PRIME-AIR 2025 (n=751); iPROVE 2018 (n=967)</td>
+<td>replicated</td>
+<td><strong>probable</strong> that it does not</td>
+</tr>
+<tr>
+<td>Emergency laparotomy</td>
+<td>◆ Null with the point estimate on the harm side (RR 1.27, CI 0.96–1.68)</td>
+<td>IMPROVE-2 2025 (n=679)</td>
+<td>single-study</td>
+<td><strong>untested beyond one trial</strong>; the one trial does not support it</td>
+</tr>
+<tr>
+<td>Laparoscopic / robotic</td>
+<td>◆ No answer — the one trial was underpowered by its own event rate</td>
+<td>DP-guided lap/robot 2023 (n=384)</td>
+<td>single-study</td>
+<td><strong>untested</strong> in a powered trial</td>
+</tr>
+<tr>
+<td>Cardiac</td>
+<td>◆ Null in one trial</td>
+<td>DP-guided cardiac 2023 (n=694)</td>
+<td>single-study</td>
+<td><strong>untested beyond one trial</strong>; the one trial does not support it</td>
+</tr>
+<tr>
+<td>Obesity</td>
+<td>◆ No individualized-PEEP trial in this map — PROBESE tested fixed PEEP 12 and does not answer this question</td>
+<td>—</td>
+<td>no-data</td>
+<td><strong>absent</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><em>◆ Two scales, kept apart on purpose: the evidence class says what kind of evidence exists for the named question, the confidence label says how much to believe it, and every label rates exactly the question in the second column — never the population in general. A row's answer must never be carried to another row.</em></p>
+<h2>What this room teaches the other one</h2>
+<p>◆ The verified ICU rows of the shared ventilation map show the same structure from a different lung: adding fixed higher PEEP to low tidal volume is null there three times (ALVEOLI, LOVS, EXPRESS), and every guided titration strategy yet tried there is null or harmful (ART harmed). What does NOT transfer: the OR outcomes in this map are postoperative pulmonary complications in atelectatic lungs; the verified ICU rows' are mortality and ventilator-free-day outcomes in inflamed ones. A titration method that pays in one-lung surgery has not thereby earned a place in ARDS — the ARDS appraisal is its own document (EQ-ICU-ARDS).</p>
+<h2>Is another trial worth running? (the next-study computation)</h2>
+<p>◆ The next OR trial worth running is not another fixed-PEEP arm — three large nulls already answer it. It is a head-to-head of the two titration labels this map's own one-lung cells carry — 'individualized' against 'DP-titrated' — powered for severe pulmonary complications at the 6% versus 15% separation iPROVE-OLV observed, with haemodynamic cost as a co-primary rather than an afterthought, because where this map's stored cost numbers stand unchallenged (DESIGNATION), hypotension (382/718 vs 317/717) and vasopressor use (224/718 vs 130/717) run against the DP-guided high-PEEP arm; the laparoscopic trial's stored numbers are disputed by the external checker and withheld, so cost belongs beside the primary, assumed in neither direction. Obesity is the untested population in this map: none of its rows tests individualized PEEP there.</p>
+<hr />
+<footer>Rendered from the emitted document DOC-EQ-0301-OR-r1. Machine-verified through
+a floor of arithmetic and reference checks plus two blinded verifier modes,
+three runs each; zero majority blockers at emission. This is an appraisal, not
+clinical advice.</footer>
+</main></body></html>

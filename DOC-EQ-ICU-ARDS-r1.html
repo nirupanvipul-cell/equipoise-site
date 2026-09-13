@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Equipoise — Ventilation in ARDS</title>
+<style>
+:root { --ink:#1a1a1a; --paper:#fdfdfb; --rule:#d8d5cc; --dim:#6b675f;
+        --accent:#7a2e2e; }
+@media (prefers-color-scheme: dark) {
+  :root { --ink:#e8e6e1; --paper:#191917; --rule:#3a3833; --dim:#a09a8e;
+          --accent:#d08770; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--paper); color:var(--ink);
+  font:17px/1.65 Charter, Georgia, "Times New Roman", serif; }
+main { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem; }
+header.site { border-bottom:1px solid var(--rule); padding:1rem 1.25rem;
+  font-family:-apple-system, "Helvetica Neue", Arial, sans-serif; }
+header.site .brand { font-weight:700; letter-spacing:.06em; font-size:.95rem;
+  text-transform:uppercase; }
+header.site .prov { color:var(--dim); font-size:.8rem; margin-top:.15rem; }
+h1 { font-size:1.65rem; line-height:1.25; margin:2.2rem 0 .8rem; }
+h2 { font-size:1.25rem; margin:2.4rem 0 .6rem; border-bottom:1px solid var(--rule);
+  padding-bottom:.3rem; }
+h3 { font-size:1.05rem; margin:1.8rem 0 .5rem; }
+h1,h2,h3 { font-family:-apple-system, "Helvetica Neue", Arial, sans-serif; }
+p { margin:.75rem 0; }
+table { border-collapse:collapse; margin:1.2rem 0; font-size:.85rem; width:100%;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace; line-height:1.45; }
+.tablewrap { overflow-x:auto; }
+th,td { border:1px solid var(--rule); padding:.35rem .55rem; text-align:left;
+  vertical-align:top; }
+th { font-family:-apple-system, Arial, sans-serif; font-size:.78rem; }
+code, pre { font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size:.85em; }
+pre { overflow-x:auto; background:rgba(128,128,128,.08); padding:.8rem;
+  border:1px solid var(--rule); }
+blockquote { margin:1rem 0; padding:.2rem 1rem; border-left:3px solid var(--accent);
+  color:var(--dim); }
+hr { border:none; border-top:1px solid var(--rule); margin:2.5rem 0; }
+footer { border-top:1px solid var(--rule); margin-top:3rem; padding-top:1rem;
+  color:var(--dim); font-size:.8rem;
+  font-family:-apple-system, Arial, sans-serif; }
+a { color:var(--accent); }
+</style></head><body>
+<header class="site"><div class="brand">Equipoise</div>
+<div class="prov"><a href="index.html">← all documents</a></div>
+<div class="prov">DOC-EQ-ICU-ARDS-r1 · emitted 2026-09-13 · every claim carries a minted
+identifier; the methods layer beneath the clinician layer is the audit trail.
+◆ marks a synthesis or judgement sentence — the document's own reading of the
+map, not a reported fact.</div></header>
+<main><h1>Ventilation strategy in ARDS and the ventilated ICU patient — what the trials actually compared</h1>
+<p><strong>◆ marks a sentence that is this document's own synthesis from the map, or a next-study judgement — verified for consistency with the map, not for external support (SHEET-7, P-83). Everything unmarked is fact and is verified strictly.</strong></p>
+<p><strong>The question as usually asked:</strong> how should I ventilate this ARDS patient? ◆ This document refuses the question's shape twice. First, 'lung-protective ventilation' is a bundle, and the verified spine below shows its components answering differently — low tidal volume alone: five single-component rows in the spine below (a sixth, Karalapillai, is an operating-room trial and lives in that document), with ARMA's mortality benefit and Determann's lung-injury benefit the only two positives and null or a harm-leaning null in the rest, added fixed intensity never positive in three trials, and every guided titration strategy yet tried null or, in ART, harmful. Second, the recent literature is not asking that question any more: the open-layer tier shows it asking HOW to titrate — by imaging, by oesophageal pressure, by driving pressure — in trials too small to carry an outcome claim. The two tiers are rendered separately because one is owner-verified and one is machine-classified, and this document never lets the second borrow the first's authority.</p>
+<h2>The pre-registered hypothesis, tested before authoring</h2>
+<p>The owner's mechanism and four predictions are recorded in this corpus's own register as OWNER-HYP-EQ-ICU-ARDS-1, timestamped 7 September 2026 — four days before this map was composed on 11 September (both timestamps sit in this document's provenance record, an internal-register fact, not an external claim). His currency caveat is recorded beside them ('it's been years since I've done much in ICU'). The map tests the predictions; the predictions never steer the map. Per fingerprint:</p>
+<ul>
+<li><strong>F1 HETEROGENEITY — fixed targets underperform per-patient titration</strong> — <strong>NOT SUPPORTED ON THE VERIFIED ICU MAP, AS TESTED.</strong> on the owner-verified tier, 4 guided or personalised pressure strategies have been tried in ARDS — ART 2017, PHARLAP 2019, EPVent-2 2019, LIVE 2019 — and their verified directions are harm, null, null, null: none beats its comparator and ART did harm. Fixed intensity added to low TV (ALVEOLI 2004, LOVS 2008, EXPRESS 2008) is null, null-trend-benefit, null. The prediction as registered is not supported by any titration strategy yet tried; whether a DIFFERENT individualisation would fare better is exactly what the map cannot say, and the open tier's titration-method trials are unpowered for outcomes.</li>
+<li><strong>F2 PARALYSIS MODIFIES IT</strong> — <strong>UNTESTABLE ON THIS MAP for the question it rates — do ventilation-strategy effects differ between paralysed and non-paralysed patients?.</strong> 2 trial(s) contrast blockade itself; 3 run both arms paralysed. No trial in this set stratifies a ventilation contrast by paralysis, so the modification cannot be read from these rows. The owner's own currency caveat on F2 is recorded with the hypothesis and travels with this verdict.</li>
+<li><strong>F3 ADHERENCE</strong> — <strong>UNTESTABLE for the question it rates — is trial signal lost where individualisation was not achieved? — because achieved separation is not extracted.</strong> testing it needs achieved-versus-intended titration per arm (SPEC §6's achieved-separation fields), which the store extraction does not yet carry for these trials; queued as gap work rather than answered from prose.</li>
+<li><strong>F4 PRONE — tested as an addition, not with its own strategy</strong> — <strong>CONFIRMED ON THIS MAP.</strong> 1 prone-contrast trial(s) in the full-text set; in 1 of them every ventilation axis is the same in both arms or unclear — prone is added to an unchanged strategy, exactly as predicted.</li>
+</ul>
+<p>◆ The register working as designed: one prediction confirmed in form (prone is trialled as an add-on, its ventilation partner unchanged), one not supported as tested (no guided pressure strategy yet tried beats a fixed one — the mechanism's rescue, that the RIGHT individualisation is still untried, is exactly the untestable residue the asymmetry rule refuses to promote), and two honestly untestable on what this corpus holds today.</p>
+<h2>Tier 1 — the verified spine (owner-checked cells, transcluded from the ventilation map)</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Trial</th>
+<th>Stratum</th>
+<th>Contrast</th>
+<th>Low TV</th>
+<th>PEEP</th>
+<th>Recruitment</th>
+<th>Comparator</th>
+<th>Verified direction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Amato 1998</td>
+<td>icu-ards</td>
+<td>bundle-vs-nothing</td>
+<td>yes</td>
+<td>yes</td>
+<td>routine</td>
+<td>no/no/no</td>
+<td><strong>benefit</strong></td>
+</tr>
+<tr>
+<td>Stewart 1998</td>
+<td>icu-at-risk</td>
+<td>lowTV-only</td>
+<td>yes</td>
+<td>same both</td>
+<td>no</td>
+<td>no/same both/no</td>
+<td><strong>null</strong></td>
+</tr>
+<tr>
+<td>Brochard 1998</td>
+<td>icu-ards</td>
+<td>lowTV-only</td>
+<td>yes</td>
+<td>same both</td>
+<td>no</td>
+<td>no/same both/no</td>
+<td><strong>null-trend-harm</strong></td>
+</tr>
+<tr>
+<td>Brower 1999</td>
+<td>icu-ards</td>
+<td>lowTV-only</td>
+<td>yes</td>
+<td>same both</td>
+<td>no</td>
+<td>no/same both/no</td>
+<td><strong>null</strong></td>
+</tr>
+<tr>
+<td>ARDSNet ARMA 2000</td>
+<td>icu-ards</td>
+<td>lowTV-only</td>
+<td>yes</td>
+<td>same both</td>
+<td>no</td>
+<td>no/same both/no</td>
+<td><strong>benefit</strong></td>
+</tr>
+<tr>
+<td>ALVEOLI 2004</td>
+<td>icu-ards</td>
+<td>addPEEP-to-lowTV</td>
+<td>yes</td>
+<td>high</td>
+<td>no</td>
+<td>yes/low/no</td>
+<td><strong>null</strong></td>
+</tr>
+<tr>
+<td>LOVS 2008</td>
+<td>icu-ards</td>
+<td>addPEEP+RM-to-lowTV</td>
+<td>yes</td>
+<td>high</td>
+<td>yes</td>
+<td>yes/conv/no</td>
+<td><strong>null-trend-benefit</strong></td>
+</tr>
+<tr>
+<td>EXPRESS 2008</td>
+<td>icu-ards</td>
+<td>addPEEP-to-lowTV</td>
+<td>yes</td>
+<td>high</td>
+<td>no</td>
+<td>yes/mod/no</td>
+<td><strong>null</strong></td>
+</tr>
+<tr>
+<td>Determann 2010</td>
+<td>icu-non-ards</td>
+<td>lowTV-only</td>
+<td>yes</td>
+<td>not protocolised</td>
+<td>no</td>
+<td>no/not protocolised/no</td>
+<td><strong>benefit</strong></td>
+</tr>
+<tr>
+<td>ART 2017</td>
+<td>icu-ards-mod-severe</td>
+<td>aggressiveRM+titratedPEEP-on-lowTV</td>
+<td>yes</td>
+<td>titrated</td>
+<td>aggressive</td>
+<td>yes/low/no</td>
+<td><strong>harm</strong></td>
+</tr>
+<tr>
+<td>PReVENT 2018</td>
+<td>icu-non-ards</td>
+<td>lowTV-vs-intermediate</td>
+<td>4-6</td>
+<td>same both</td>
+<td>no</td>
+<td>8-10/same both/no</td>
+<td><strong>null</strong></td>
+</tr>
+<tr>
+<td>PHARLAP 2019</td>
+<td>icu-ards-mod-severe</td>
+<td>maxRM+titratedPEEP-on-protective</td>
+<td>yes, further limited</td>
+<td>titrated</td>
+<td>maximal</td>
+<td>yes/std/no</td>
+<td><strong>null</strong></td>
+</tr>
+<tr>
+<td>EPVent-2 2019</td>
+<td>icu-ards-mod-severe</td>
+<td>PesPEEP-vs-empiricalhighPEEP</td>
+<td>yes</td>
+<td>Pes-guided</td>
+<td>no</td>
+<td>yes/high-FiO2table/no</td>
+<td><strong>null</strong></td>
+</tr>
+<tr>
+<td>LIVE 2019</td>
+<td>icu-ards-mod-severe</td>
+<td>morphology-personalized</td>
+<td>varies</td>
+<td>varies</td>
+<td>varies</td>
+<td>yes/low/no</td>
+<td><strong>null</strong></td>
+</tr>
+<tr>
+<td>RELAx 2020</td>
+<td>icu-non-ards</td>
+<td>lowerPEEP-vs-PEEP8</td>
+<td>yes</td>
+<td>0-5</td>
+<td>no</td>
+<td>yes/8/no</td>
+<td><strong>null-noninferior</strong></td>
+</tr>
+<tr>
+<td>Limited-DP 2024</td>
+<td>icu-mixed-arf</td>
+<td>limitDP-vs-lowTV</td>
+<td>no</td>
+<td>not protocolised</td>
+<td>no</td>
+<td>yes/not protocolised/no</td>
+<td><strong>null</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Transcluded by reference from EQ-0301's verified cell map; the full walkthrough of these sixteen trials, including effect sizes and the next-study computation, lives in the ventilation document and is not duplicated here.</em></p>
+<h2>Tier 2 — the open-layer map (machine-classified, full free texts, eight derived axes)</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Trial</th>
+<th>Year</th>
+<th>n</th>
+<th>TV</th>
+<th>PEEP</th>
+<th>DP</th>
+<th>Mode</th>
+<th>Prone</th>
+<th>NMB</th>
+<th>ECMO</th>
+<th>Sedation</th>
+<th>Contrast</th>
+<th>Primary outcome, as extracted</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Interaction between low tidal volume ventilation str…</td>
+<td>2019</td>
+<td>836</td>
+<td>yes</td>
+<td>same both</td>
+<td>yes</td>
+<td>same both</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>no</td>
+<td>unclear</td>
+<td>no-computable-contrast</td>
+<td>mortality before discharge home and breathing without assist: low tidal volume (PaO2/FiO2 &gt; 150): 41/183 (22%); traditional tidal volume (PaO2/FiO2 &gt; 150): 64/162 (40%)</td>
+</tr>
+<tr>
+<td>Effect of driving pressure on mortality in ARDS pati…</td>
+<td>2016</td>
+<td>805</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>no</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>no-computable-contrast</td>
+<td>90-day mortality: not extracted</td>
+</tr>
+<tr>
+<td>Pressure control plus spontaneous ventilation versus…</td>
+<td>2024</td>
+<td>700</td>
+<td>titrated→same both</td>
+<td>titrated</td>
+<td>titrated→same both</td>
+<td>yes</td>
+<td>titrated</td>
+<td>titrated</td>
+<td>yes</td>
+<td>titrated</td>
+<td>no-computable-contrast</td>
+<td>in-hospital death from any cause at day 60: PC-SV: 120/347 (35%); ACV: 118/352 (34%)</td>
+</tr>
+<tr>
+<td>Sigh in Patients With Acute Hypoxemic Respiratory Fa…</td>
+<td>2021</td>
+<td>258</td>
+<td>same both</td>
+<td>unclear→same both</td>
+<td>titrated</td>
+<td>titrated→unclear</td>
+<td>unclear</td>
+<td>no→unclear</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>no-computable-contrast</td>
+<td>failure of assisted ventilation: sigh: 30/129 (23%); no-sigh: 39/129 (30%)</td>
+</tr>
+<tr>
+<td>A multicenter RCT of noninvasive ventilation in pneu…</td>
+<td>2019</td>
+<td>200</td>
+<td>unclear</td>
+<td>titrated→no</td>
+<td>yes→no</td>
+<td>same both</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>PEEP+DP</td>
+<td>need for intubation: NIV: 11/102 (11%); control: 9/98 (9%)</td>
+</tr>
+<tr>
+<td>Early non-invasive ventilation and high-flow nasal o…</td>
+<td>2023</td>
+<td>141</td>
+<td>yes</td>
+<td>titrated</td>
+<td>yes</td>
+<td>titrated</td>
+<td>unclear</td>
+<td>no</td>
+<td>unclear</td>
+<td>titrated</td>
+<td>no-computable-contrast</td>
+<td>endotracheal intubation for delayed respiratory failure with: HFNC-O2 + early NIV: 5/71 (7%); COT ± late NIV: 6/70 (9%)</td>
+</tr>
+<tr>
+<td>Non-invasive respiratory support in SARS-CoV-2 relat…</td>
+<td>2022</td>
+<td>128</td>
+<td>titrated</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>titrated</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>no-computable-contrast</td>
+<td>In-hospital mortality: Group A (P/F ≤ 200): 4/29 (14%); Group B (P/F ≤ 150): 9/68 (13%)</td>
+</tr>
+<tr>
+<td>Comparison of limited driving pressure ventilation a…</td>
+<td>2024</td>
+<td>126</td>
+<td>unclear</td>
+<td>titrated→unclear</td>
+<td>yes→unclear</td>
+<td>titrated</td>
+<td>unclear</td>
+<td>titrated</td>
+<td>unclear</td>
+<td>titrated</td>
+<td>no-computable-contrast</td>
+<td>acute lung injury (ALI) score on day 7: limited driving pressure (LDP): 1.9 (±1.14); low tidal volume (LTV): 1.89 (±0.99)</td>
+</tr>
+<tr>
+<td>Individualized Lung-Protective Ventilation Strategy …</td>
+<td>2025</td>
+<td>124</td>
+<td>titrated</td>
+<td>titrated</td>
+<td>unclear→yes</td>
+<td>unclear</td>
+<td>yes</td>
+<td>yes</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>no-computable-contrast</td>
+<td>PaO2/FiO2 ratio: EPM-guided group: 268.82 (±32.46); conventional group: 195.41 (±28.23)</td>
+</tr>
+<tr>
+<td>The impact of PEEP-guided electrical impedance tomog…</td>
+<td>2025</td>
+<td>116</td>
+<td>same both</td>
+<td>titrated</td>
+<td>yes→titrated</td>
+<td>same both→unclear</td>
+<td>unclear</td>
+<td>same both</td>
+<td>unclear</td>
+<td>same both</td>
+<td>DP</td>
+<td>oxygenation (PaO2/FiO2) and static compliance: EIT-guided PEEP: 180.0; Low PEEP/FiO2 strategy: 159.0</td>
+</tr>
+<tr>
+<td>The effect of prone position on oxygen saturation, b…</td>
+<td>2025</td>
+<td>90</td>
+<td>same both</td>
+<td>same both</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>yes→no</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>same both</td>
+<td>Prone</td>
+<td>Oxygen saturation (SpO2), arterial blood gas parameters, and: Experimental (Prone) group: 88.81 (±2.49); Control group: 86.07 (±8.94)</td>
+</tr>
+<tr>
+<td>Use of Airway Pressure Release Ventilation in Patien…</td>
+<td>2022</td>
+<td>90</td>
+<td>titrated→same both</td>
+<td>titrated</td>
+<td>yes</td>
+<td>same both</td>
+<td>same both</td>
+<td>same both</td>
+<td>no</td>
+<td>same both</td>
+<td>no-computable-contrast</td>
+<td>ventilator-free days at 28 days: airway pressure release ventilation: 3.7; low tidal volume: 5.2</td>
+</tr>
+<tr>
+<td>Is airway pressure release ventilation, a better pri…</td>
+<td>2021</td>
+<td>90</td>
+<td>titrated</td>
+<td>unclear</td>
+<td>titrated→same both</td>
+<td>yes</td>
+<td>no</td>
+<td>no→same both</td>
+<td>unclear</td>
+<td>same both</td>
+<td>no-computable-contrast</td>
+<td>PaO2/FiO2 ratio: SIMV-PC: 413.0 (±94.0); APRV: 443.0 (±85.0)</td>
+</tr>
+<tr>
+<td>Lower tidal volume strategy (≈3 ml/kg) combined with…</td>
+<td>2013</td>
+<td>79</td>
+<td>unclear→yes</td>
+<td>unclear</td>
+<td>unclear→yes</td>
+<td>unclear→titrated</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>yes→unclear</td>
+<td>titrated</td>
+<td>no-computable-contrast</td>
+<td>Ventilator-free days within 28 and 60 days (28-VFD and 60-VF: avECCO2-R: 10.0 (±8); Control: 9.3 (±9)</td>
+</tr>
+<tr>
+<td>Effects of innovative modular prone positioning tool…</td>
+<td>2024</td>
+<td>76</td>
+<td>unclear</td>
+<td>same both</td>
+<td>same both</td>
+<td>titrated</td>
+<td>yes</td>
+<td>unclear</td>
+<td>no</td>
+<td>no</td>
+<td>no-computable-contrast</td>
+<td>comfort and efficiency of awake prone positioning (AW-PP): observation group: 2.74 (±0.86); control group: 4.64 (±1.02)</td>
+</tr>
+<tr>
+<td>The effect of preemptive airway pressure release ven…</td>
+<td>2022</td>
+<td>65</td>
+<td>unclear→titrated</td>
+<td>titrated</td>
+<td>yes</td>
+<td>yes</td>
+<td>unclear</td>
+<td>no</td>
+<td>unclear</td>
+<td>titrated</td>
+<td>no-computable-contrast</td>
+<td>ARDS development: P-SIMV+PS: 5/33 (15%); APRV: 1/32 (3%)</td>
+</tr>
+<tr>
+<td>Efficacy of positive end-expiratory pressure titrati…</td>
+<td>2009</td>
+<td>61</td>
+<td>unclear</td>
+<td>titrated→unclear</td>
+<td>unclear</td>
+<td>same both→unclear</td>
+<td>no</td>
+<td>yes→same both</td>
+<td>no</td>
+<td>yes→unclear</td>
+<td>no-computable-contrast</td>
+<td>improvement in oxygenation (PF ratio): not extracted</td>
+</tr>
+<tr>
+<td>Comparison of PEEP titration methods to improve resp…</td>
+<td>2026</td>
+<td>49</td>
+<td>same both</td>
+<td>titrated</td>
+<td>same both</td>
+<td>unclear</td>
+<td>titrated</td>
+<td>yes</td>
+<td>unclear</td>
+<td>yes</td>
+<td>no-computable-contrast</td>
+<td>mean respiratory system compliance: not extracted</td>
+</tr>
+<tr>
+<td>The Effect of Transpulmonary Pressure-Guided Positiv…</td>
+<td>2026</td>
+<td>40</td>
+<td>unclear</td>
+<td>titrated→unclear</td>
+<td>yes→unclear</td>
+<td>titrated</td>
+<td>unclear</td>
+<td>yes</td>
+<td>unclear</td>
+<td>yes</td>
+<td>no-computable-contrast</td>
+<td>Pulmonary arterial compliance (Cpa) dynamic changes: not extracted</td>
+</tr>
+<tr>
+<td>Low tidal volume ventilation with low PEEP during su…</td>
+<td>2016</td>
+<td>28</td>
+<td>yes</td>
+<td>same both</td>
+<td>titrated</td>
+<td>same both</td>
+<td>unclear</td>
+<td>same both</td>
+<td>no</td>
+<td>same both</td>
+<td>no-computable-contrast</td>
+<td>change in pro-inflammatory cytokine concentrations in the lu: TV6: 6.0; TV12: 12.0</td>
+</tr>
+<tr>
+<td>Alveolar recruitment maneuver attenuates extravascul…</td>
+<td>2017</td>
+<td>24</td>
+<td>same both</td>
+<td>titrated</td>
+<td>yes</td>
+<td>same both</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>no-computable-contrast</td>
+<td>Extravascular lung water index (EVLWI): not extracted</td>
+</tr>
+<tr>
+<td>Adaptive mechanical ventilation with automated minim…</td>
+<td>2019</td>
+<td>20</td>
+<td>unclear</td>
+<td>same both</td>
+<td>unclear</td>
+<td>same both</td>
+<td>no</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>no-computable-contrast</td>
+<td>—: not extracted</td>
+</tr>
+<tr>
+<td>A randomised controlled trial of an open lung strate…</td>
+<td>2011</td>
+<td>20</td>
+<td>unclear</td>
+<td>unclear→titrated</td>
+<td>yes→unclear</td>
+<td>titrated→unclear</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>no-computable-contrast</td>
+<td>plasma cytokines, oxygenation and lung compliance: PHARLAP: 204.0 (±9.0); Control: 165.0 (±9.0)</td>
+</tr>
+<tr>
+<td>Electric impedance tomography-guided PEEP titration …</td>
+<td>2023</td>
+<td>16</td>
+<td>same both</td>
+<td>titrated→unclear</td>
+<td>same both</td>
+<td>unclear</td>
+<td>no</td>
+<td>unclear</td>
+<td>no</td>
+<td>unclear</td>
+<td>no-computable-contrast</td>
+<td>Change in mechanical power: EIT-guided PEEP titration: -2.5 (±3.7); High-PEEP/FiO2 table: 1.87 (±1.61)</td>
+</tr>
+</tbody>
+</table></div>
+<p>*A cell reads <code>intervention→comparator</code> where the arms differ and a single value where they do not. <code>unclear</code> is the classifier refusing to guess from the methods text — an honest hole, never imputed. Every committed cell carries a verbatim methods quote in the stored record. <code>not extracted</code> means the store's extraction did not ground a number, not that the paper has none</p>
+<h2>The walkthrough — what the two tiers say together</h2>
+<p>◆ <strong>The verified spine answers the composed question.</strong> Against a comparator with none of the bundle, the bundle won once and decisively (Amato 1998: 38% versus 71% mortality, in 53 analysed). One component alone — low tidal volume against traditional volumes — carries a mortality benefit in ARDS once (ARMA, 31.0% versus 39.8%) and, outside ARDS, one benefit on lung-injury development rather than mortality (Determann, 150 patients); Stewart and Brower are null and Brochard is a harm-leaning null on the same contrast, and low-versus-intermediate volume is null in 961 (PReVENT). The PEEP floor is non-inferior at lower levels outside ARDS (RELAx). Adding fixed higher PEEP to low tidal volume is null in ALVEOLI and EXPRESS and a benefit-leaning null in LOVS (the map's label: null-trend-benefit). Every guided titration strategy yet tried — staircase recruitment with decremental PEEP (ART), sustained maximal recruitment (PHARLAP), oesophageal-pressure guidance against an empirical high-PEEP table (EPVent-2), morphology-personalised strategy (LIVE) — is null except ART, whose verified direction is harm (28-day mortality 55.3% versus 49.3%, HR 1.20, CI 1.01–1.42). ◆ The heterogeneity the owner's mechanism predicts is real at the alveolar scale; what the verified map shows is that no titration signal yet used to exploit it has converted that mechanism into survival.</p>
+<p>◆ <strong>The open tier shows where the field has gone.</strong> Most of the rendered open-tier trials are titration-METHOD or mode comparisons — electrical impedance tomography against tables, transpulmonary pressure against empirical settings, APRV against conventional modes, sigh breaths, spontaneous-effort strategies — run at 16 to 258 patients against physiological endpoints. ◆ Read against the verified spine, the pattern is uncomfortable: the field is refining HOW to individualise while no individualised strategy in either tier of this map has improved a patient-important outcome — the only strategy that moved a patient-important outcome — ART — moved 28-day mortality toward harm (55.3% versus 49.3%, HR 1.20, CI 1.01–1.42), and the open tier's positive readings are physiological endpoints, and a 700-randomised contrast of pressure control with preserved spontaneous ventilation reads flat on its extracted numbers (120/347 against 118/352). The map cannot say whether these methods work; it can say, cell by cell, that nobody has yet run the trial that would.</p>
+<h2>The axes themselves are a finding (P-113)</h2>
+<p>◆ Derived from four independent sources rather than authored: across 15 trial-named, 7 review-named and 13 guideline-named candidate axes, only <strong>prone positioning</strong> clears the three-source bar. Tidal volume, PEEP, driving-pressure limitation, neuromuscular blockade and ECMO are each named by trials and guidelines, and sedation by trials and reviews, without any axis but prone crossing three sources — the synthesis literature is not cutting this evidence where the trials and the guidelines cut it. Ventilatory mode is named by the trials source alone. The disagreement is rendered rather than resolved.</p>
+<h2>The next study this map implies (computed from the map)</h2>
+<p>◆ The trial this map is missing is not another small titration-method comparison — the open tier is full of them. It is an outcome-powered trial of ANY individualised pressure strategy against best fixed practice, in the stratum the mechanism predicts should separate (moderate-to-severe ARDS, paralysed, prone-eligible), with achieved separation measured and reported per arm — because F3, the adherence prediction, is untestable today for the plain reason that no trial extraction carries achieved-versus-intended titration. Until that trial exists, the verified spine's answer stands: protect, keep the tidal volume low, and spend no confidence on any particular way of being clever about pressure.</p>
+<hr />
+<h2>Enumeration, scope and provenance (the appendix the owner reads)</h2>
+<ul>
+<li>Enumerated: <strong>400 randomised trials</strong> at the free layer (capped query; the enumeration record is per-section, SPEC §1). Full text held and classified: <strong>69</strong>, of which <strong>24</strong> are rendered rows, <strong>36</strong> are excluded with per-trial reasons (drug and adjunct trials belong to other sections of the ARDS family; the full list is in <code>scope-calls.json</code> for your read), and <strong>9</strong> are unusable at the join (roles unassigned, classified on other axes, or protocol publications without results) — 24 + 36 + 9 = 69. Abstract-and-registry tier, counted and not rendered: <strong>331</strong>.</li>
+<li>Scope rule, verbatim from the recorded scope-calls file this document ships with: ventilatory strategy in ARDS; drug/adjunct/procedure trials belong to other sections of the ARDS family.</li>
+<li>Tier-1 cells and directions are owner-verified (EQ-0301). Tier-2 cells are machine-classified with verbatim-quote verification; the classifier's one validation against the owner's hand-built map is recorded in this document's provenance record: on committed cells it matched the owner 21 of 23 after vocabulary reconciliation and refused rather than guessed on the rest. Its refusal rate is the map's honest thinness.</li>
+<li>Authored prose (◆) written on claude-fable-5 (D222); facts verified closed-mode against this document's own stored maps; synthesis verified for map-consistency.</li>
+</ul>
+<footer>Rendered from the emitted document DOC-EQ-ICU-ARDS-r1. Machine-verified through
+a floor of arithmetic and reference checks plus two blinded verifier modes,
+three runs each; zero majority blockers at emission. This is an appraisal, not
+clinical advice.</footer>
+</main></body></html>
