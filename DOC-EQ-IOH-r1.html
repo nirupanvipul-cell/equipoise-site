@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Equipoise — Intraoperative hypotension</title>
+<style>
+:root { --ink:#1a1a1a; --paper:#fdfdfb; --rule:#d8d5cc; --dim:#6b675f;
+        --accent:#7a2e2e; }
+@media (prefers-color-scheme: dark) {
+  :root { --ink:#e8e6e1; --paper:#191917; --rule:#3a3833; --dim:#a09a8e;
+          --accent:#d08770; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--paper); color:var(--ink);
+  font:17px/1.65 Charter, Georgia, "Times New Roman", serif; }
+main { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem; }
+header.site { border-bottom:1px solid var(--rule); padding:1rem 1.25rem;
+  font-family:-apple-system, "Helvetica Neue", Arial, sans-serif; }
+header.site .brand { font-weight:700; letter-spacing:.06em; font-size:.95rem;
+  text-transform:uppercase; }
+header.site .prov { color:var(--dim); font-size:.8rem; margin-top:.15rem; }
+h1 { font-size:1.65rem; line-height:1.25; margin:2.2rem 0 .8rem; }
+h2 { font-size:1.25rem; margin:2.4rem 0 .6rem; border-bottom:1px solid var(--rule);
+  padding-bottom:.3rem; }
+h3 { font-size:1.05rem; margin:1.8rem 0 .5rem; }
+h1,h2,h3 { font-family:-apple-system, "Helvetica Neue", Arial, sans-serif; }
+p { margin:.75rem 0; }
+table { border-collapse:collapse; margin:1.2rem 0; font-size:.85rem; width:100%;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace; line-height:1.45; }
+.tablewrap { overflow-x:auto; }
+th,td { border:1px solid var(--rule); padding:.35rem .55rem; text-align:left;
+  vertical-align:top; }
+th { font-family:-apple-system, Arial, sans-serif; font-size:.78rem; }
+code, pre { font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size:.85em; }
+pre { overflow-x:auto; background:rgba(128,128,128,.08); padding:.8rem;
+  border:1px solid var(--rule); }
+blockquote { margin:1rem 0; padding:.2rem 1rem; border-left:3px solid var(--accent);
+  color:var(--dim); }
+hr { border:none; border-top:1px solid var(--rule); margin:2.5rem 0; }
+footer { border-top:1px solid var(--rule); margin-top:3rem; padding-top:1rem;
+  color:var(--dim); font-size:.8rem;
+  font-family:-apple-system, Arial, sans-serif; }
+a { color:var(--accent); }
+</style></head><body>
+<header class="site"><div class="brand">Equipoise</div>
+<div class="prov"><a href="index.html">← all documents</a></div>
+<div class="prov">DOC-EQ-IOH-r1 · emitted 2026-09-13 · every claim carries a minted
+identifier; the methods layer beneath the clinician layer is the audit trail.
+◆ marks a synthesis or judgement sentence — the document's own reading of the
+map, not a reported fact.</div></header>
+<main><h1>Intraoperative hypotension — MAP thresholds and avoidance strategies, as trialled</h1>
+<p><strong>◆ marks a sentence that is this document's own synthesis from the map, or a next-study judgement — verified for consistency with the map, not for external support (SHEET-7, P-83). Everything unmarked is fact and is verified strictly.</strong></p>
+<p><strong>The question as usually asked:</strong> what MAP should I defend, and how hard? ◆ This is the batch's healthiest anchor by evidence structure — the single axis that crossed three derivation sources in either batch is the blood-pressure axis rendered here — and its recent rows at scale are at full text: proactive against reactive hypotension treatment, 3,522 randomised, whose stored extraction holds no primary numbers (the row states the trial and its question, not a number); and individualised against routine blood-pressure management, 1,142 randomised, 33.5% against 30.5% on a composite of acute kidney injury, acute myocardial injury, nonfatal cardiac arrest or death, as the row names it — a target contrast that did not favour the individualised target. The map separates two questions: what threshold to defend, and whether defending it earlier or automatically changes what happens to the patient.</p>
+<h2>The bundle map — the trials this map renders, what each arm actually got</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Trial</th>
+<th>Setting</th>
+<th>Randomised</th>
+<th>BP target</th>
+<th>Comparator (BP target)</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Effect of Using Hypotension Prediction Index to Reduce I</td>
+<td>intraoperative</td>
+<td>100</td>
+<td>yes</td>
+<td>yes</td>
+<td>numbers not extracted</td>
+</tr>
+<tr>
+<td>Proactive vs Reactive Treatment of Hypotension During Surger</td>
+<td>intraoperative</td>
+<td>3522</td>
+<td>yes</td>
+<td>unclear</td>
+<td>numbers not extracted</td>
+</tr>
+<tr>
+<td>Intraoperative hypotension after remimazolam or propofol ind</td>
+<td>intraoperative</td>
+<td>112</td>
+<td>same both</td>
+<td>same both</td>
+<td>propofol: 49/56 (87.5%); remimazolam: 50/56 (89.3%)</td>
+</tr>
+<tr>
+<td>Intraoperative hypotension during robotic-assisted radical p</td>
+<td>intraoperative</td>
+<td>80</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>HPI group: 0.19 (median; interquartile bounds not stored); Control group: 0.16 (median; interquartile bounds not stored)</td>
+</tr>
+<tr>
+<td>Norepinephrine infusion for prophylaxis against spinal-induc</td>
+<td>intraoperative</td>
+<td>84</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>numbers not extracted</td>
+</tr>
+<tr>
+<td>Individualized vs. standard control of intraoperative blood</td>
+<td>intraoperative</td>
+<td>220</td>
+<td>titrated</td>
+<td>yes</td>
+<td>Group C: 69.42 (SD 19.26); Group S: 59.34 (SD 12.06)</td>
+</tr>
+<tr>
+<td>Effect of Intraoperative Blood Pressure Levels on Postoperat</td>
+<td>intraoperative</td>
+<td>142</td>
+<td>yes</td>
+<td>unclear</td>
+<td>numbers not extracted</td>
+</tr>
+<tr>
+<td>Remimazolam provides better hemodynamic stability than propo</td>
+<td>intraoperative</td>
+<td>122</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>remimazolam: 2.0 (median; interquartile bounds not stored); propofol: 3.0 (median; interquartile bounds not stored)</td>
+</tr>
+<tr>
+<td>Efficacy of remimazolam besylate versus propofol on hemodyna</td>
+<td>intraoperative</td>
+<td>224</td>
+<td>titrated</td>
+<td>titrated</td>
+<td>remimazolam besylate: 31/109 (28.4%); propofol: 77/105 (73.3%)</td>
+</tr>
+<tr>
+<td>Preemptive noradrenaline infusion: a game-changer against po</td>
+<td>intraoperative</td>
+<td>80</td>
+<td>same both</td>
+<td>same both</td>
+<td>Noradrenaline: 4/40 (10.0%); Control: 18/40 (45.0%)</td>
+</tr>
+<tr>
+<td>Individualized intraoperative blood pressure control with no</td>
+<td>intraoperative</td>
+<td>166</td>
+<td>yes</td>
+<td>unclear</td>
+<td>individualized care: 10/74 (13.5%); usual care: 10/70 (14.3%)</td>
+</tr>
+<tr>
+<td>Individualized Perioperative Blood Pressure Management in Pa</td>
+<td>intraoperative</td>
+<td>1142</td>
+<td>titrated</td>
+<td>yes</td>
+<td>Individualized blood pressure management: 190/567 (33.5%); Routine blood pressure management: 173/567 (30.5%)</td>
+</tr>
+<tr>
+<td>Early Use of Norepinephrine in High-risk Patients Undergoing</td>
+<td>intraoperative</td>
+<td>500</td>
+<td>yes</td>
+<td>yes</td>
+<td>numbers not extracted</td>
+</tr>
+<tr>
+<td>Can individualized blood pressure control prevent delirium a</td>
+<td>intraoperative</td>
+<td>124</td>
+<td>yes</td>
+<td>yes</td>
+<td>Group H: 7/57 (12.3%); Group L: 12/57 (21.1%)</td>
+</tr>
+<tr>
+<td>Effectiveness of hypotension prediction index software in re</td>
+<td>intraoperative</td>
+<td>85</td>
+<td>yes</td>
+<td>yes</td>
+<td>numbers not extracted</td>
+</tr>
+<tr>
+<td>Comparison of Remimazolam versus Dexmedetomidine on Hemodyna</td>
+<td>intraoperative</td>
+<td>132</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>remimazolam: 14/63 (22.2%); dexmedetomidine: 33/63 (52.4%)</td>
+</tr>
+<tr>
+<td>Effect of propofol combined with remimazolam besylate on blo</td>
+<td>intraoperative</td>
+<td>169</td>
+<td>yes</td>
+<td>yes</td>
+<td>Group P: 18/57 (31.6%); Group PR: 8/56 (14.3%)</td>
+</tr>
+<tr>
+<td>Leg compression for preventing hypotension after spinal anes</td>
+<td>intraoperative</td>
+<td>60</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>numbers not extracted</td>
+</tr>
+<tr>
+<td>Effect of Remimazolam- versus Propofol-Based Total Intraveno</td>
+<td>intraoperative</td>
+<td>94</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>propofol: 45/47 (95.7%); remimazolam: 39/47 (83.0%)</td>
+</tr>
+<tr>
+<td>Limited effect of leg elevation in preventing intraoperative</td>
+<td>intraoperative</td>
+<td>50</td>
+<td>same both</td>
+<td>same both</td>
+<td>control: 25/25 (100.0%); treatment: 21/24 (87.5%)</td>
+</tr>
+<tr>
+<td>Hypotension Prediction Index guided Goal Directed therapy an</td>
+<td>intraoperative</td>
+<td>70</td>
+<td>yes</td>
+<td>yes</td>
+<td>numbers not extracted</td>
+</tr>
+<tr>
+<td>Remimazolam and propofol combination in ischemic cerebrovasc</td>
+<td>intraoperative</td>
+<td>105</td>
+<td>same both</td>
+<td>same both</td>
+<td>group P: 27/34 (79.4%); group R1: 16/31 (51.6%)</td>
+</tr>
+<tr>
+<td>Effect of controlled hypotension on postoperative awakening</td>
+<td>intraoperative</td>
+<td>120</td>
+<td>yes</td>
+<td>yes</td>
+<td>numbers not extracted</td>
+</tr>
+<tr>
+<td>Blood Pressure Reduction During Anesthetic Induction with Re</td>
+<td>intraoperative</td>
+<td>432</td>
+<td>same both</td>
+<td>same both</td>
+<td>numbers not extracted</td>
+</tr>
+<tr>
+<td>Phenylephrine-induced blood pressure elevation reduces pulmo</td>
+<td>intraoperative</td>
+<td>44</td>
+<td>yes</td>
+<td>no</td>
+<td>numbers not extracted</td>
+</tr>
+<tr>
+<td>Effect of intravenous low-dose norepinephrine on blood loss</td>
+<td>intraoperative</td>
+<td>120</td>
+<td>yes</td>
+<td>yes</td>
+<td>NE Group: 294.5 (SD 113.71); C Group: 480.92 (SD 132.05)</td>
+</tr>
+<tr>
+<td>Incidence of intraoperative hypotension in older patients un</td>
+<td>intraoperative</td>
+<td>132</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>propofol: 37/62 (59.7%); remimazolam: 20/60 (33.3%)</td>
+</tr>
+<tr>
+<td>Comparison of arterial hypotension incidence during general</td>
+<td>intraoperative</td>
+<td>60</td>
+<td>same both</td>
+<td>same both</td>
+<td>Target Group: 90.3; Bolus Group: 86.2</td>
+</tr>
+<tr>
+<td>Effect of a Machine Learning-Derived Early Warning System fo</td>
+<td>intraoperative</td>
+<td>68</td>
+<td>same both</td>
+<td>same both</td>
+<td>early warning system: 0.1 (median; interquartile bounds not stored); standard care: 0.44 (median; interquartile bounds not stored)</td>
+</tr>
+<tr>
+<td>Hypotension prediction index guided versus conventional goal</td>
+<td>intraoperative</td>
+<td>34</td>
+<td>yes</td>
+<td>yes</td>
+<td>numbers not extracted</td>
+</tr>
+<tr>
+<td>Tight perioperative blood pressure management to reduce comp</td>
+<td>intraoperative</td>
+<td>80</td>
+<td>yes</td>
+<td>no</td>
+<td>numbers not extracted</td>
+</tr>
+<tr>
+<td>A Randomized Trial of Continuous Noninvasive Blood Pressure</td>
+<td>intraoperative</td>
+<td>320</td>
+<td>yes</td>
+<td>yes</td>
+<td>continuous monitoring (unblinded): 0.05 (median; interquartile bounds not stored); intermittent oscillometric blood pressure monitoring (blinded): 0.11 (median; interquartile bounds not stored)</td>
+</tr>
+<tr>
+<td>[The role of magnesium sulfate in providing hemodynamic stab</td>
+<td>intraoperative</td>
+<td>70</td>
+<td>same both</td>
+<td>same both</td>
+<td>Groupe Mg2+: 104.62 (SD 18.03); Groupe S: 112.54 (SD 18.03)</td>
+</tr>
+<tr>
+<td>Comparison of labetalol and lidocaine in induction of contro</td>
+<td>intraoperative</td>
+<td>64</td>
+<td>yes</td>
+<td>yes</td>
+<td>numbers not extracted</td>
+</tr>
+<tr>
+<td>A double-blind randomised feasibility trial of angiotensin-2</td>
+<td>intraoperative</td>
+<td>60</td>
+<td>same both</td>
+<td>same both</td>
+<td>angiotensin‐2: 7/28 (25.0%); noradrenaline: 12/32 (37.5%)</td>
+</tr>
+<tr>
+<td>Effectiveness of the advisory display SmartPilot® view in th</td>
+<td>intraoperative</td>
+<td>128</td>
+<td>same both</td>
+<td>same both</td>
+<td>test group (SPV): 75.64 (SD 8.9); control group (Standard): 74.83 (SD 10.85)</td>
+</tr>
+<tr>
+<td>Controlled hypotension technology can improve patient recove</td>
+<td>intraoperative</td>
+<td>200</td>
+<td>yes</td>
+<td>no</td>
+<td>Group T (tourniquet group): 866.44 (SD 222.86); Group H (controlled hypotension group): 687.3 (SD 189.16)</td>
+</tr>
+<tr>
+<td>Effect of phenylephrine infusion on hypotension induced by t</td>
+<td>intraoperative</td>
+<td>66</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>numbers not extracted</td>
+</tr>
+<tr>
+<td>Target blood pressure management during cardiopulmonary bypa</td>
+<td>intraoperative</td>
+<td>40</td>
+<td>unclear</td>
+<td>yes</td>
+<td>numbers not extracted</td>
+</tr>
+<tr>
+<td>Post-induction hypotension with remimazolam versus propofol</td>
+<td>intraoperative</td>
+<td>82</td>
+<td>yes</td>
+<td>yes</td>
+<td>numbers refused at gate</td>
+</tr>
+<tr>
+<td>Effect of Targeting Mean Arterial Pressure During Cardiopulm</td>
+<td>intraoperative</td>
+<td>215</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>numbers not extracted</td>
+</tr>
+<tr>
+<td>Fluid preloading before beach chair positioning for arthrosc</td>
+<td>intraoperative</td>
+<td>49</td>
+<td>yes</td>
+<td>yes</td>
+<td>Group C (control group): 63.04 (SD 10.38); Group P (study group): 74.81 (SD 8.76)</td>
+</tr>
+<tr>
+<td>Bispectral index to guide induction of anesthesia: a randomi</td>
+<td>intraoperative</td>
+<td>240</td>
+<td>no</td>
+<td>no</td>
+<td>BIS-guided propofol administration: 53/120 (44.2%); Weight-based propofol administration: 52/115 (45.2%)</td>
+</tr>
+<tr>
+<td>CONSORT the effect of intraoperative dexmedetomidine on hemo</td>
+<td>intraoperative</td>
+<td>93</td>
+<td>same both</td>
+<td>same both</td>
+<td>numbers not extracted</td>
+</tr>
+<tr>
+<td>Intervals for Oscillometric Arterial Pressure Monitoring dur</td>
+<td>abstract-tier</td>
+<td>264</td>
+<td>?</td>
+<td>?</td>
+<td>2.5-min group: 0.0; 5-min group: 13/132 (9.8%)</td>
+</tr>
+<tr>
+<td>Effects of Fospropofol on intraoperative hemodynamics in pat</td>
+<td>abstract-tier</td>
+<td>217</td>
+<td>?</td>
+<td>?</td>
+<td>fospropofol: 65.7; propofol: 353.0</td>
+</tr>
+<tr>
+<td>Etomidate combined with TAPB in ovarian cancer surgery: A co</td>
+<td>abstract-tier</td>
+<td>80</td>
+<td>?</td>
+<td>?</td>
+<td>numbers not extracted</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>The enumeration swept the hypotension-adjacent drug literature; drug-choice trials that merely report hypotension are counted in the enumeration record and rendered in their own anchors, not here; drug-choice trials whose primary outcome is hypotension are rendered. Abstract-grade rows carry no methods cells by design. Abstract grade names the grade at which the machine holds a text, not the paper's publication state. The next-study judgement is synthesis in the expected-value-of-sample-information frame (Ades, Lu and Claxton 2004, Medical Decision Making 24:207-227, doi:10.1177/0272989X04263162), applied as a structured judgement rather than a numerical estimate.</em></p>
+<h2>The walkthrough — where each group of trials landed, and why</h2>
+<h3>Blood-pressure target contrasts</h3>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Trial</th>
+<th>Setting</th>
+<th>Primary outcome</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Individualized vs. standard control of intraoperative blood</td>
+<td>intraoperative</td>
+<td>serum creatinine increase</td>
+<td>Group C: 69.42 (SD 19.26); Group S: 59.34 (SD 12.06)</td>
+</tr>
+<tr>
+<td>Individualized Perioperative Blood Pressure Management in Pa</td>
+<td>intraoperative</td>
+<td>Composite outcome of acute kidney injury, acute myocardial injury, nonfatal cardiac arrest, or death within the first 7 postoperative days</td>
+<td>Individualized blood pressure management: 190/567 (33.5%); Routine blood pressure management: 173/567 (30.5%)</td>
+</tr>
+<tr>
+<td>Phenylephrine-induced blood pressure elevation reduces pulmo</td>
+<td>intraoperative</td>
+<td>primary outcome not in the stored record</td>
+<td>numbers not extracted</td>
+</tr>
+<tr>
+<td>Tight perioperative blood pressure management to reduce comp</td>
+<td>intraoperative</td>
+<td>primary outcome not in the stored record</td>
+<td>numbers not extracted</td>
+</tr>
+<tr>
+<td>Controlled hypotension technology can improve patient recove</td>
+<td>intraoperative</td>
+<td>Total blood loss</td>
+<td>Group T (tourniquet group): 866.44 (SD 222.86); Group H (controlled hypotension group): 687.3 (SD 189.16)</td>
+</tr>
+</tbody>
+</table></div>
+<p>◆ <strong>The threshold question and the avoidance question come apart on this map.</strong> The target-contrast rows — individualised against routine management at 33.5% against 30.5% in 1,142 at full text; a 124-patient delirium-target row reading 12.3% against 21.1% for its higher against its lower target; a 215-patient MAP-targeting trial extracting no grounded numbers — do not reward any particular number consistently. The avoidance rows test machinery rather than targets: proactive against reactive treatment at full text with its primary ungrounded, and a 68-patient early-warning row where prediction-guided treatment cut time-weighted hypotension (0.1 against 0.44, medians) without a patient-important claim attached. ◆ What the map supports: hypotension exposure is measurable and modifiable — the monitoring and prediction rows move it — while the patient-important return on defending any particular number is not established by the rows this map holds, and the newest large trial argues the return may be small. The association literature is observational; the enumeration returned some of it, and those rows are counted and excluded, not rendered.</p>
+<h2>Is another trial worth running? (the next-study computation)</h2>
+<p>◆ The trial the map's own shape asks for: a threshold trial in the population the association data flags as highest-risk, powered for organ injury, with exposure measured continuously in both arms — so the contrast delivered can be verified rather than assumed. The avoidance machinery is ready; what it should defend is the unanswered half.</p>
+<hr />
+<footer>Rendered from the emitted document DOC-EQ-IOH-r1. Machine-verified through
+a floor of arithmetic and reference checks plus two blinded verifier modes,
+three runs each; zero majority blockers at emission. This is an appraisal, not
+clinical advice.</footer>
+</main></body></html>

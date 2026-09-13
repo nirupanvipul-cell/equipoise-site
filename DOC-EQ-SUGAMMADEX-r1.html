@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Equipoise — Sugammadex versus neostigmine</title>
+<style>
+:root { --ink:#1a1a1a; --paper:#fdfdfb; --rule:#d8d5cc; --dim:#6b675f;
+        --accent:#7a2e2e; }
+@media (prefers-color-scheme: dark) {
+  :root { --ink:#e8e6e1; --paper:#191917; --rule:#3a3833; --dim:#a09a8e;
+          --accent:#d08770; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--paper); color:var(--ink);
+  font:17px/1.65 Charter, Georgia, "Times New Roman", serif; }
+main { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem; }
+header.site { border-bottom:1px solid var(--rule); padding:1rem 1.25rem;
+  font-family:-apple-system, "Helvetica Neue", Arial, sans-serif; }
+header.site .brand { font-weight:700; letter-spacing:.06em; font-size:.95rem;
+  text-transform:uppercase; }
+header.site .prov { color:var(--dim); font-size:.8rem; margin-top:.15rem; }
+h1 { font-size:1.65rem; line-height:1.25; margin:2.2rem 0 .8rem; }
+h2 { font-size:1.25rem; margin:2.4rem 0 .6rem; border-bottom:1px solid var(--rule);
+  padding-bottom:.3rem; }
+h3 { font-size:1.05rem; margin:1.8rem 0 .5rem; }
+h1,h2,h3 { font-family:-apple-system, "Helvetica Neue", Arial, sans-serif; }
+p { margin:.75rem 0; }
+table { border-collapse:collapse; margin:1.2rem 0; font-size:.85rem; width:100%;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace; line-height:1.45; }
+.tablewrap { overflow-x:auto; }
+th,td { border:1px solid var(--rule); padding:.35rem .55rem; text-align:left;
+  vertical-align:top; }
+th { font-family:-apple-system, Arial, sans-serif; font-size:.78rem; }
+code, pre { font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size:.85em; }
+pre { overflow-x:auto; background:rgba(128,128,128,.08); padding:.8rem;
+  border:1px solid var(--rule); }
+blockquote { margin:1rem 0; padding:.2rem 1rem; border-left:3px solid var(--accent);
+  color:var(--dim); }
+hr { border:none; border-top:1px solid var(--rule); margin:2.5rem 0; }
+footer { border-top:1px solid var(--rule); margin-top:3rem; padding-top:1rem;
+  color:var(--dim); font-size:.8rem;
+  font-family:-apple-system, Arial, sans-serif; }
+a { color:var(--accent); }
+</style></head><body>
+<header class="site"><div class="brand">Equipoise</div>
+<div class="prov"><a href="index.html">← all documents</a></div>
+<div class="prov">DOC-EQ-SUGAMMADEX-r1 · emitted 2026-09-13 · every claim carries a minted
+identifier; the methods layer beneath the clinician layer is the audit trail.
+◆ marks a synthesis or judgement sentence — the document's own reading of the
+map, not a reported fact.</div></header>
+<main><h1>Sugammadex versus neostigmine — what the trials actually compared</h1>
+<p><strong>◆ marks a sentence that is this document's own synthesis from the map, or a next-study judgement — verified for consistency with the map, not for external support (SHEET-7, P-83). Everything unmarked is fact and is verified strictly.</strong></p>
+<p><strong>The question as usually asked:</strong> should I reverse with sugammadex or neostigmine? ◆ This map answers the question the trials actually ran — speed and completeness of train-of-four recovery, and recovery-room course — and now reaches the question the anchor was chosen for: the map's abstract tier carries a 3,498-patient trial with postoperative pulmonary complications or death as its primary outcome — 19.0% with sugammadex against 21.5% with neostigmine — the first patient-important row at that scale in this map.</p>
+<h2>The bundle map — the trials this map renders, what each arm actually got</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Trial</th>
+<th>Setting</th>
+<th>Randomised</th>
+<th>Reversal agent</th>
+<th>Sugammadex dose</th>
+<th>Anticholinergic</th>
+<th>Comparator (agent/dose/anticholinergic)</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Effect of neuromuscular blockade reversal strategy on gastro</td>
+<td>reversal</td>
+<td>not recorded</td>
+<td>yes</td>
+<td>unclear</td>
+<td>no</td>
+<td>unclear/unclear/unclear</td>
+<td>Sugammadex: 89; Neostigmine/Glycopyrrolate: 87</td>
+</tr>
+<tr>
+<td>Impact of Sugammadex versus Neostigmine on Diaphragmatic Fun</td>
+<td>reversal</td>
+<td>104</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>yes/no/yes</td>
+<td>sugammadex: 0.05; neostigmine: 0.28</td>
+</tr>
+<tr>
+<td>Neostigmine versus sugammadex on outpatient recovery among o</td>
+<td>reversal</td>
+<td>90</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>yes/no/yes</td>
+<td>Neostigmine: 125.0; Sugammadex: 123.0</td>
+</tr>
+<tr>
+<td>Low dose of sugammadex versus neostigmine for reversal of ro</td>
+<td>reversal</td>
+<td>129</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>yes/no/yes</td>
+<td>sugammadex: 4.3 (median; interquartile bounds not stored); neostigmine: 20.6 (median; interquartile bounds not stored)</td>
+</tr>
+<tr>
+<td>Sugammadex for Neuromuscular Blockade Reversal and Postopera</td>
+<td>reversal</td>
+<td>60</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>yes/no/yes</td>
+<td>N group: 120.0; S group: 129.0</td>
+</tr>
+<tr>
+<td>Sugammadex versus Neostigmine Reversal After Thoracoscopic T</td>
+<td>reversal</td>
+<td>64</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>unclear/unclear/unclear</td>
+<td>sugammadex: 2.62 (median; interquartile bounds not stored); neostigmine: 14.63 (median; interquartile bounds not stored)</td>
+</tr>
+<tr>
+<td>Reversal of neuromuscular blockade after coronary artery byp</td>
+<td>reversal</td>
+<td>72</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>yes/no/yes</td>
+<td>numbers not extracted</td>
+</tr>
+<tr>
+<td>Sugammadex Vs. Neostigmine for Cerebral Perfusion During Eme</td>
+<td>reversal</td>
+<td>82</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>unclear/no/yes</td>
+<td>sugammadex: 24600; neostigmine: 31575</td>
+</tr>
+<tr>
+<td>Sugammadex or neostigmine for reversal of neuromuscular bloc</td>
+<td>reversal</td>
+<td>77</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>yes/no/yes</td>
+<td>sugammadex: 125.0; neostigmine: 122.0</td>
+</tr>
+<tr>
+<td>Recovery of the Acute Hypoxic Ventilatory Response after Rev</td>
+<td>reversal</td>
+<td>32</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>no</td>
+<td>no/no/no</td>
+<td>Spontaneous recovery: 0.71 (SD 0.42); 2 mg/kg sugammadex: 0.58 (SD 0.26)</td>
+</tr>
+<tr>
+<td>Effect of sugammadex titration versus manufacturer's recomme</td>
+<td>reversal</td>
+<td>210</td>
+<td>yes</td>
+<td>titrated</td>
+<td>no</td>
+<td>yes/same both/no</td>
+<td>titrated group: 1.4 (median; interquartile bounds not stored); manufacturer recommended group: 2.0 (median; interquartile bounds not stored)</td>
+</tr>
+<tr>
+<td>Effect of sugammadex with neostigmine on postoperative bowel</td>
+<td>reversal</td>
+<td>90</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>unclear/unclear/unclear</td>
+<td>Group S: 12.0; Group S1N: 15.0</td>
+</tr>
+<tr>
+<td>The effect of sugammadex sodium on muscle relaxation recover</td>
+<td>reversal</td>
+<td>90</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>yes/no/yes</td>
+<td>S1: 4.3 (SD 0.95); S2: 23.2 (SD 2.5)</td>
+</tr>
+<tr>
+<td>Impact of Sugammadex Versus Neostigmine Reversal on Postoper</td>
+<td>reversal</td>
+<td>120</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>yes/no/yes</td>
+<td>Sugammadex: 13.0 (median; interquartile bounds not stored); Neostigmine: 13.5 (median; interquartile bounds not stored)</td>
+</tr>
+<tr>
+<td>Comparing Clinical Outcomes in Cardiac Surgical Patients Who</td>
+<td>reversal</td>
+<td>64</td>
+<td>yes</td>
+<td>titrated</td>
+<td>no</td>
+<td>no/no/no</td>
+<td>sugammadex: 31/32 (96.9%); placebo: 31/32 (96.9%)</td>
+</tr>
+<tr>
+<td>Comparison of Effects of Sugammadex and Neostigmine on Posto</td>
+<td>reversal</td>
+<td>63</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>yes/no/yes</td>
+<td>group C (neostigmine combined with atropine): 14.0 (median; interquartile bounds not stored); group S (sugammadex): 4.0 (median; interquartile bounds not stored)</td>
+</tr>
+<tr>
+<td>Comparison of reversal of rocuronium-induced neuromuscular b</td>
+<td>reversal</td>
+<td>30</td>
+<td>yes</td>
+<td>same both</td>
+<td>no</td>
+<td>yes/same both/no</td>
+<td>remimazolam: 3.0 (median; interquartile bounds not stored); propofol: 2.5 (median; interquartile bounds not stored)</td>
+</tr>
+<tr>
+<td>Sugammadex shortens operation time and improves operation tu</td>
+<td>reversal</td>
+<td>60</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>yes/no/yes</td>
+<td>numbers not extracted</td>
+</tr>
+<tr>
+<td>Comparison of the Effects of Sugammadex Recommended Dose (2</td>
+<td>reversal</td>
+<td>20</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>yes/yes/no</td>
+<td>R group: 2.3 (median; interquartile bounds not stored); F group: 2.0 (median; interquartile bounds not stored)</td>
+</tr>
+<tr>
+<td>Success rate of acceleromyographic neuromuscular monitoring</td>
+<td>reversal</td>
+<td>64</td>
+<td>yes</td>
+<td>same both</td>
+<td>no</td>
+<td>yes/same both/no</td>
+<td>BIS60: 30/30 (100.0%); BIS70: 12/32 (37.5%)</td>
+</tr>
+<tr>
+<td>Comparison of recovery after sugammadex or neostigmine rever</td>
+<td>reversal</td>
+<td>40</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>yes/no/yes</td>
+<td>sugammadex: 4.0 (SD 2.2); neostigmine: 26.3 (SD 17.5)</td>
+</tr>
+<tr>
+<td>A comparison of neuromuscular blockade and reversal using ci</td>
+<td>reversal</td>
+<td>84</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>yes/no/yes</td>
+<td>group C (propofol-remifentanil-cisatracurium-neostigmine): 168.0; group S (propofol-remifentanil-rocuronium-sugamadex): 180.0</td>
+</tr>
+<tr>
+<td>Sugammadex Versus Neostigmine for Recovery of Respiratory Mu</td>
+<td>reversal</td>
+<td>60</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>no</td>
+<td>unclear/no/yes</td>
+<td>sugammadex: 9.0 (SD 6.0); neostigmine: 16.0 (SD 9.0)</td>
+</tr>
+<tr>
+<td>Safety and Efficacy of 4 mg·kg⁻¹ Sugammadex for Simultaneous</td>
+<td>reversal</td>
+<td>48</td>
+<td>yes</td>
+<td>unclear</td>
+<td>no</td>
+<td>unclear/unclear/unclear</td>
+<td>numbers not extracted</td>
+</tr>
+<tr>
+<td>The arousal effect of sugammadex reversal of neuromuscular b</td>
+<td>reversal</td>
+<td>66</td>
+<td>yes</td>
+<td>same both</td>
+<td>no</td>
+<td>yes/same both/no</td>
+<td>deep anesthesia group: 0/33 (0.0%); shallow anesthesia group: 12/33 (36.4%)</td>
+</tr>
+<tr>
+<td>Reduction of Nonoperative Time Using the Induction Room, Par</td>
+<td>reversal</td>
+<td>111</td>
+<td>yes</td>
+<td>titrated</td>
+<td>no</td>
+<td>yes/no/yes</td>
+<td>control: 48.0 (median; interquartile bounds not stored); active: 25.0 (median; interquartile bounds not stored)</td>
+</tr>
+<tr>
+<td>Effect of intraoperative muscle relaxation reversal on the s</td>
+<td>reversal</td>
+<td>181</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no/no/no</td>
+<td>numbers not extracted</td>
+</tr>
+<tr>
+<td>The effect of vitamin D status on different neuromuscular bl</td>
+<td>reversal</td>
+<td>84</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes/no/yes</td>
+<td>Group sugammadex and vitamin D &lt; 30 ng/mL: 37; Group sugammadex and vitamin D ≥ 30 ng/mL: 5</td>
+</tr>
+<tr>
+<td>Does sugammadex decrease the severity of agitation and compl</td>
+<td>reversal</td>
+<td>70</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>unclear/unclear/unclear</td>
+<td>Group S: 8.86 (SD 1.4); Group N: 12.25 (SD 2.52)</td>
+</tr>
+<tr>
+<td>Effects of neuromuscular blockade reversal on bispectral ind</td>
+<td>reversal</td>
+<td>65</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>unclear/unclear/unclear</td>
+<td>Neostigmine: 18; Sugammadex: 14</td>
+</tr>
+<tr>
+<td>Efficacy and safety of sugammadex doses calculated on the ba</td>
+<td>reversal</td>
+<td>125</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no/no/no</td>
+<td>CBW group: 2.24 (SD 0.65); TBW group: 2.05 (SD 0.72)</td>
+</tr>
+<tr>
+<td>Staggering the dose of sugammadex lowers risks for severe em</td>
+<td>reversal</td>
+<td>120</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>unclear/unclear/unclear</td>
+<td>sugammadex 2 mg/kg group: 28/40 (70.0%); sugammadex 1 + 1 mg/kg group: 5/40 (12.5%)</td>
+</tr>
+<tr>
+<td>[Influence of methylprednisolone on the reversal time of sug</td>
+<td>reversal</td>
+<td>164</td>
+<td>yes</td>
+<td>same both</td>
+<td>unclear</td>
+<td>yes/same both/unclear</td>
+<td>Group C: 130.0; Group M: 181.0</td>
+</tr>
+<tr>
+<td>Half dose sugammadex combined with neostigmine is non-inferi</td>
+<td>reversal</td>
+<td>56</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>yes/yes/yes</td>
+<td>Group S: 27/28 (96.4%); Group NS: 25/28 (89.3%)</td>
+</tr>
+<tr>
+<td>Rocuronium blockade reversal with sugammadex vs. neostigmine</td>
+<td>reversal</td>
+<td>308</td>
+<td>unclear</td>
+<td>yes</td>
+<td>no</td>
+<td>unclear/no/yes</td>
+<td>sugammadex (Chinese subjects): 1.6; neostigmine (Chinese subjects): 9.1</td>
+</tr>
+<tr>
+<td>Comparison of emergence agitation between succinylcholine an</td>
+<td>reversal</td>
+<td>42</td>
+<td>yes</td>
+<td>titrated</td>
+<td>no</td>
+<td>unclear/unclear/no</td>
+<td>group SC: 19/21 (90.5%); group RS: 10/21 (47.6%)</td>
+</tr>
+<tr>
+<td>Comparison of sugammadex and neostigmine-atropine on intraoc</td>
+<td>reversal</td>
+<td>60</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>unclear</td>
+<td>yes/no/yes</td>
+<td>numbers not extracted</td>
+</tr>
+<tr>
+<td>Effect of Sugammadex on Postoperative Bleeding and Coagulati</td>
+<td>reversal</td>
+<td>50</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>yes/no/yes</td>
+<td>numbers not extracted</td>
+</tr>
+<tr>
+<td>Dexamethasone does not diminish sugammadex reversal of neuro</td>
+<td>reversal</td>
+<td>65</td>
+<td>yes</td>
+<td>unclear</td>
+<td>no</td>
+<td>yes/unclear/no</td>
+<td>control (granisetron): 121.0 (SD 61.0); dexamethasone: 125.0 (SD 57.0)</td>
+</tr>
+<tr>
+<td>The influence of mild hypothermia on reversal of rocuronium-</td>
+<td>reversal</td>
+<td>60</td>
+<td>yes</td>
+<td>same both</td>
+<td>no</td>
+<td>yes/same both/no</td>
+<td>hypothermia: 171.1 (SD 62.1); normothermia: 124.9 (SD 59.2)</td>
+</tr>
+<tr>
+<td>Neostigmine Versus Sugammadex for Reversal of Neuromuscular</td>
+<td>abstract-tier</td>
+<td>41</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+<td>?/?/?</td>
+<td>neostigmine/glycopyrrolate: 573.0; sugammadex: 147.0</td>
+</tr>
+<tr>
+<td>Postoperative residual neuromuscular blockade and hypoventil</td>
+<td>abstract-tier</td>
+<td>84</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+<td>?/?/?</td>
+<td>sugammadex: 55.0; neostigmine: 58.0</td>
+</tr>
+<tr>
+<td>Sugammadex versus neostigmine for reversal of neuromuscular</td>
+<td>abstract-tier</td>
+<td>3498</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+<td>?/?/?</td>
+<td>sugammadex: 331/1743 (19.0%); neostigmine: 377/1752 (21.5%)</td>
+</tr>
+<tr>
+<td>A Randomized Controlled Trial of Sugammadex versus Neostigmi</td>
+<td>abstract-tier</td>
+<td>not recorded</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+<td>?/?/?</td>
+<td>sugammadex: 1118.0; neostigmine-glycopyrrolate: 1130.0</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Cells carry the classifier's per-arm reading at present/absent/titrated grain; <code>unclear</code> is a refusal to commit from the methods text. Effect strings are copied from the stored gated extractions named per row. Abstract grade names the grade at which the machine holds a text, not the paper's publication state. The next-study judgement is synthesis in the expected-value-of-sample-information frame (Ades, Lu and Claxton 2004, Medical Decision Making 24:207-227, doi:10.1177/0272989X04263162), applied as a structured judgement rather than a numerical estimate.</em></p>
+<h2>The walkthrough — where each group of trials landed, and why</h2>
+<h3>Rows whose contrast is the reversal agent (with its anticholinergic and dose)</h3>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Trial</th>
+<th>Setting</th>
+<th>Primary outcome</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Impact of Sugammadex versus Neostigmine on Diaphragmatic Fun</td>
+<td>reversal</td>
+<td>change in diaphragmatic excursion during deep breathing from baseline at 30 min after extubation (ΔDE DB at T2)</td>
+<td>sugammadex: 0.05; neostigmine: 0.28</td>
+</tr>
+<tr>
+<td>Neostigmine versus sugammadex on outpatient recovery among o</td>
+<td>reversal</td>
+<td>PACU length of stay</td>
+<td>Neostigmine: 125.0; Sugammadex: 123.0</td>
+</tr>
+<tr>
+<td>Low dose of sugammadex versus neostigmine for reversal of ro</td>
+<td>reversal</td>
+<td>time to achieve a Train-of-Four (TOF) ratio of ≥ 0.9</td>
+<td>sugammadex: 4.3 (median; interquartile bounds not stored); neostigmine: 20.6 (median; interquartile bounds not stored)</td>
+</tr>
+<tr>
+<td>Reversal of neuromuscular blockade after coronary artery byp</td>
+<td>reversal</td>
+<td>primary outcome not in the stored record</td>
+<td>numbers not extracted</td>
+</tr>
+<tr>
+<td>Sugammadex Vs. Neostigmine for Cerebral Perfusion During Eme</td>
+<td>reversal</td>
+<td>MCAV% S</td>
+<td>sugammadex: 24600; neostigmine: 31575</td>
+</tr>
+<tr>
+<td>Impact of Sugammadex Versus Neostigmine Reversal on Postoper</td>
+<td>reversal</td>
+<td>Time from administration of the NMBD reversal agent to discharge from the operating room (OR)</td>
+<td>Sugammadex: 13.0 (median; interquartile bounds not stored); Neostigmine: 13.5 (median; interquartile bounds not stored)</td>
+</tr>
+<tr>
+<td>Comparing Clinical Outcomes in Cardiac Surgical Patients Who</td>
+<td>reversal</td>
+<td>Number of patients meeting the Society of Thoracic Surgery (STS) quality benchmark of extubation within 6 hours of end of surgery</td>
+<td>sugammadex: 31/32 (96.9%); placebo: 31/32 (96.9%)</td>
+</tr>
+<tr>
+<td>Comparison of Effects of Sugammadex and Neostigmine on Posto</td>
+<td>reversal</td>
+<td>Recovery from neuromuscular blockade</td>
+<td>group C (neostigmine combined with atropine): 14.0 (median; interquartile bounds not stored); group S (sugammadex): 4.0 (median; interquartile bounds not stored)</td>
+</tr>
+<tr>
+<td>Sugammadex shortens operation time and improves operation tu</td>
+<td>reversal</td>
+<td>primary outcome not in the stored record</td>
+<td>numbers not extracted</td>
+</tr>
+<tr>
+<td>Comparison of recovery after sugammadex or neostigmine rever</td>
+<td>reversal</td>
+<td>Time from administration of a NMBA reversal agent to train-of-four (TOF) ratio ≥0.9</td>
+<td>sugammadex: 4.0 (SD 2.2); neostigmine: 26.3 (SD 17.5)</td>
+</tr>
+<tr>
+<td>A comparison of neuromuscular blockade and reversal using ci</td>
+<td>reversal</td>
+<td>quality of recovery</td>
+<td>group C (propofol-remifentanil-cisatracurium-neostigmine): 168.0; group S (propofol-remifentanil-rocuronium-sugamadex): 180.0</td>
+</tr>
+<tr>
+<td>Sugammadex Versus Neostigmine for Recovery of Respiratory Mu</td>
+<td>reversal</td>
+<td>change in thickening fraction of internal oblique muscle (ΔTF IO) from baseline to TOFR ≥0.9</td>
+<td>sugammadex: 9.0 (SD 6.0); neostigmine: 16.0 (SD 9.0)</td>
+</tr>
+<tr>
+<td>Reduction of Nonoperative Time Using the Induction Room, Par</td>
+<td>reversal</td>
+<td>Nonoperative time (NOT)</td>
+<td>control: 48.0 (median; interquartile bounds not stored); active: 25.0 (median; interquartile bounds not stored)</td>
+</tr>
+<tr>
+<td>Efficacy and safety of sugammadex doses calculated on the ba</td>
+<td>reversal</td>
+<td>Time to recovery of train-of-four (TOF) ratio to 0.9</td>
+<td>CBW group: 2.24 (SD 0.65); TBW group: 2.05 (SD 0.72)</td>
+</tr>
+<tr>
+<td>Half dose sugammadex combined with neostigmine is non-inferi</td>
+<td>reversal</td>
+<td>Recovery to 90% Train of Four (TOF) ratio within 5 min</td>
+<td>Group S: 27/28 (96.4%); Group NS: 25/28 (89.3%)</td>
+</tr>
+<tr>
+<td>Rocuronium blockade reversal with sugammadex vs. neostigmine</td>
+<td>reversal</td>
+<td>time to recovery of train-of-four (TOF) ratio to 0.9</td>
+<td>sugammadex (Chinese subjects): 1.6; neostigmine (Chinese subjects): 9.1</td>
+</tr>
+<tr>
+<td>Effect of Sugammadex on Postoperative Bleeding and Coagulati</td>
+<td>reversal</td>
+<td>primary outcome not in the stored record</td>
+<td>numbers not extracted</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Rows whose contrast label is dose or weight basis alone</h3>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Trial</th>
+<th>Setting</th>
+<th>Primary outcome</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Comparison of the Effects of Sugammadex Recommended Dose (2</td>
+<td>reversal</td>
+<td>time to achieve a normalized train-of-four (TOF) ratio of 0.9</td>
+<td>R group: 2.3 (median; interquartile bounds not stored); F group: 2.0 (median; interquartile bounds not stored)</td>
+</tr>
+<tr>
+<td>The effect of vitamin D status on different neuromuscular bl</td>
+<td>reversal</td>
+<td>Neuromuscular blocker reversal time</td>
+<td>Group sugammadex and vitamin D &lt; 30 ng/mL: 37; Group sugammadex and vitamin D ≥ 30 ng/mL: 5</td>
+</tr>
+</tbody>
+</table></div>
+<p>◆ <strong>On recovery of neuromuscular transmission the map is one-sided.</strong> The head-to-head rows put train-of-four recovery consistently faster with sugammadex, and the spread is large where the extraction holds both arms — 1.6 against 9.1 in the stored arm results of a 308-patient trial (labelled as its Chinese subjects), 4.3 against 20.6 in a 129-patient low-dose trial, each on its row's own recovery-time outcome, unit not stored. ◆ <strong>What that speed buys the patient is where the map thins out.</strong> The rows that look past the twitch monitor differ by little on their own scales: recovery-room stay 123 against 125; time to operating-room discharge 13.0 against 13.5; gastrointestinal recovery 89 against 87 — and the map states no interval for any of them. ◆ <strong>The pulmonary-complication question has a single row at scale</strong>, at abstract grade: pulmonary complications or death 331/1,743 (19.0%) with sugammadex against 377/1,752 (21.5%) with neostigmine in 3,498 — the row a patient-important claim would rest on, and it favours sugammadex. The honest state: faster reversal is the direction the head-to-head recovery-time rows share in this map; the patient-important row — a composite of pulmonary complications or death, 2.5 points lower with sugammadex — is a single large trial read at abstract grade, replicated nowhere yet in this map.</p>
+<h2>Is another trial worth running? (the next-study computation)</h2>
+<p>◆ The next trial is the replication: the map's single pulmonary-complication result at scale stands alone at abstract grade, and a second trial against optimally dosed, quantitatively monitored neostigmine — so the comparison is against neostigmine used well — would settle whether the 19.0-versus-21.5 separation is the drug or the practice around it.</p>
+<hr />
+<footer>Rendered from the emitted document DOC-EQ-SUGAMMADEX-r1. Machine-verified through
+a floor of arithmetic and reference checks plus two blinded verifier modes,
+three runs each; zero majority blockers at emission. This is an appraisal, not
+clinical advice.</footer>
+</main></body></html>
